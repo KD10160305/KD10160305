@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>绘制矩形</title>
+</head>
+<body>
+<div id="canvas-warp">
+    <canvas id="canvas" style="border: 1px solid #aaaaaa; display: block; margin: 50px auto;">
+        你的浏览器居然不支持Canvas？！赶快换一个吧！！
+    </canvas>
+</div>
+
+<script>
+    window.onload = function(){
+        var canvas = document.getElementById("canvas");
+        canvas.width = 100;
+        canvas.height = 100;
+        var context = canvas.getContext("2d");
+
+        context.beginPath();
+        context.moveTo(15,5);
+        context.lineTo(65,5);
+        context.lineTo(65,55);
+        context.lineTo(15,55);
+        context.lineTo(15,5);     //绘制最后一笔使图像闭合
+        context.lineWidth = 5;
+        context.strokeStyle = "black";
+        context.stroke();
+
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<canvas id="canvas" style="border:1px solid #aaa;display:block;margin:50px auto;"></canvas>
+<script type="text/javascript">
+window.onload = function(){
+var canvas = document.getElementById("canvas");
+var context = canvas.getContext("2d");
+
+canvas.width = 100;
+canvas.height = 100;
+
+context.moveTo(30,10);
+context.lineTo(100,100);
+
+context.lineWidth = 5;
+context.strokeStyle = "red";
+context.stroke();
+}
+</script>
+</body>
+</html>
+
+
