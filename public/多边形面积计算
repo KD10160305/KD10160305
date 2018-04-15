@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>地图面积</title>
+    <title>多边形面积计算</title>
     <meta http-equiv="Content-Type" content="text/html;" />
     <script type="text/javascript" src="echarts.js"></script>
 </head>
